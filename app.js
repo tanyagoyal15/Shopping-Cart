@@ -65,7 +65,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-var port = 4000;
+var port = 3000;
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
