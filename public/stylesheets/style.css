@@ -1,0 +1,67 @@
+.page {
+	background-color: #F8F9FB;
+}
+.thumbnail img {
+	max-height: 150px;
+}
+
+.description {
+	color: #7f7f7f;
+}
+
+.signup-page,.signin-page {
+  	box-shadow: 0 0 7px 0 #E9EDF5;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.form-group input {
+	border: none;
+	text-decoration: none;
+	box-shadow: none;
+	font-size: 16px;
+} 
+
+.form-group input:focus {
+	text-decoration: none;
+	box-shadow: none;
+	transition:  all 0.5s ease;
+}
+ 
+.form-group input:-webkit-autofill:focus {
+	-webkit-text-fill-color: black;
+	transition: all 5000s ease-in-out 0s;
+	-webkit-box-shadow: 0 0 0px 1000px #000 inset;
+}
+.button {
+	background-color: white;
+	border-radius: 30px;
+	border: none;
+	padding: 10px 20px;
+	font-size: 15px;
+  	box-shadow: 0 0 7px 0 rgba(56, 56, 56, 0.2);
+}
+
+.button:focus, .button:hover {
+    background: linear-gradient(to left, #33ccff 0%, #0033cc 100%);
+	text-decoration: none;
+	color: #fff;
+	transition: all 0.3s ease;
+	outline: none;
+}
+
+.thumbnail {
+	border-radius: 15px;
+	border:none;
+	box-shadow: 0 0 7px 0 rgba(56, 56, 56, 0.2);
+}
+
+.thumbnail img {
+	width: 70%;
+	transition: 0.4s;
+	transform: scale(1.0);
+}
+
+.thumbnail:hover img {
+	transform: scale(1.1);
+}

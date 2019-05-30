@@ -1,0 +1,25 @@
+<div class="row">
+	<div class="col-md-4 col-md-offset-4 signin-page">
+		<h1><strong>Sign In</strong></h1>
+		{{#if hasErrors}}
+		<div class="alert alert-danger">
+			{{# each messages}}
+				<p>{{ this }}</p>
+			{{/each}}
+		</div>
+		{{/if}}
+		<form action="/user/signin" method="post" style="margin: 20px;">
+			<div class="form-group" style="display: flex; flex-direction: row; justify-content: center; align-items: center; border-bottom: 1px solid #ccc; font-size: 16px;">
+				<label for="email"><i class="fa fa-envelope" aria-hidden="true"></i></label>
+				<input type="text" name="email" id="email" class="form-control" placeholder="Your Email">
+			</div>
+			<div class="form-group" style="display: flex; flex-direction: row; justify-content: center; align-items: center; border-bottom: 1px solid #ccc; font-size: 16px;">
+				<label for="password"><i class="fa fa-lock" aria-hidden="true"></i></label>
+				<input type="password" name="password" id="password" class="form-control" placeholder="Your Password">
+			</div>
+			<input type="hidden" name="_csrf" value="{{ csrfToken }}">
+			<button type="submit" class="button" style="margin-top: 10px;">SignIn</button>
+		</form>
+		<p>Don't have an account? <a href="/user/signup" style="text-decoration: none;">Sign Up Instead!</a></p>
+	</div>
+</div>
