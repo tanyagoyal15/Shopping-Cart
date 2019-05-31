@@ -14,9 +14,12 @@ var MongoStore = require('connect-mongo')(session);
 var indexRouter = require('./routes/index');
 var userRouter = require('./routes/user');
 
+// require('dotenv').config();
+
 var app = express();
 
-mongoose.connect('mongodb://localhost:27017/shopping');
+// mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://tanya:tanya15@ds231207.mlab.com:31207/shopping');
 require('./config/passport');
 
 // view engine setup
