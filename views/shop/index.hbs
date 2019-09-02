@@ -7,18 +7,32 @@
 </div>
 
 {{# each products }} 
-  <div class="row">
+  <div class="row wrapper">
     {{# each this}}
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail" class="thumbnail"> 
+        <div class="col-sm-6 col-md-3">
+          <div class="card">  
             <img src="{{ this.imagePath }}" alt="..." class="img-responsive">
-            <div class="caption" style="padding: 15px;">
-              <h4>{{ this.title}}</h4>
-              <h5 class="description">{{ this.description }}</h5>
-              <div class="clearfix">
-                <div class="price pull-left" style="padding: 8px 0; font-size: 20px;">${{ this.price }}</div>
-                <a href="/add-to-cart/{{this._id}}" class="btn pull-right button" role="button">Add To Cart</a>
-            </div>
+            <!-- <a href="/add-to-cart/{{this._id}}" style="float: right">Add to Cart</a> -->
+            <!-- <a href="/add-to-cart/{{this._id}}" role="button"><i className="fas fa-cart-plus"/></a> -->
+
+            <!-- <button className="cart-btn" disabled={inCart ? true : false} onClick={() => { value.addToCart(id); }}>
+                {inCart ? (<p className="text-capitalize mb-0" disabled> {" "} in Cart </p>) : ( <i className="fas fa-cart-plus"/> )}
+            </button> -->
+            <div class="card-footer">
+                <p>{{this.title}}</p>
+                <div class="price-cart">
+                    <h5 style="font-weight: bold;">Rs {{this.price}}</h5>
+                    <a href="/add-to-cart/{{this._id}}" style="float: right" role="button" class="cart-btn">Add</a>
+                </div>
+<!--                 <p>Hello</p>
+ --><!--                 <a href="/add-to-cart/{{this._id}}" class="btn pull-right button" role="button">Add To Cart</a> -->
+              <!-- <p className="align-self-center mb-0">
+                  {{ this.title}}
+                </p>
+                <h5 className="text-blue font-italic mb-0">
+                  <span className="mr-1">Rs</span>
+                  {{this.price}}
+                </h5> -->
           </div>
         </div>
       </div> 

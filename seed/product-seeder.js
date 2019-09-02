@@ -6,40 +6,40 @@ mongoose.connect('mongodb://tanya:tanya15@ds231207.mlab.com:31207/shopping');
 
 var products = [
 	new Product({
-		imagePath: 'images/pic1.jpg',
-		title: 'Chinese Laundry Queen',
+		imagePath: 'images/product-1.png',
+		title: 'RUFFLE PRINT DRESS',
 		description: 'Price',
-		price: 30
+		price: 700
 	}),
 	new Product({
-		imagePath: 'images/pic2.jpg',
-		title: 'Italian Shoemakers Bade Sandals',
+		imagePath: 'images/product-2.png',
+		title: 'Boho PRINTED DRESS',
 		description: 'Price',
-		price: 40
+		price: 560
 	}),
 	new Product({
-		imagePath: 'images/pic3.jpg',
-		title: 'Solanz Ellie Wedge Sandals',
+		imagePath: 'images/product-3.png',
+		title: 'TWO-TONE STRIPE DRESS',
 		description: 'Price',
-		price: 25
+		price: 650
 	}),
 	new Product({
-		imagePath: 'images/pic4.jpg',
-		title: 'Vintage 7 Eight Kristen Wedge Sandals',
+		imagePath: 'images/product-4.png',
+		title: 'Jersy Print Maxi Dress',
 		description: 'Price',
-		price: 30
+		price: 800
 	}),
 	new Product({
-		imagePath: 'images/pic5.jpg',
-		title: ' Y-Not Herald Wedge Sandals',
+		imagePath: 'images/product-5.png',
+		title: 'Floral Print Crisscross Dress',
 		description: 'Price',
-		price: 45
+		price: 680
 	}),
 	new Product({
-		imagePath: 'images/pic6.jpg',
-		title: 'Makalu Lucila Strappy Wedge Sandals',
+		imagePath: 'images/product-6.png',
+		title: 'Chica Animal Print Dress',
 		description: 'Price',
-		price: 40
+		price: 900
 	})
 	];
 
