@@ -4,8 +4,8 @@
 	<div class="col-sm-6 col-md-12">
 		<ul class="list">
 			{{# each products}}
-			<li class="list-item"
-				style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+			<li class="list-item" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+				<img src="/{{ this.item.imagePath }}" class="img-responsive" style="width: 70px; height: 120px;">
 				<strong style="text-transform: uppercase; width: 30%">{{ this.item.title }}</strong>
 				<span class="qty">
 					<a href="/add/{{ this.item._id}}"><i class="fa fa-plus fa-1x"></i></a>
