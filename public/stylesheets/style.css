@@ -1,9 +1,10 @@
 .page {
-	background-color: #F8F9FB;
+	/* background-color: #F8F9FB; */
 }
 
 .buttons {
-	background-color: white;
+	background-color: #2463D8 ;
+	color: #fff;
 	border-radius: 30px;
 	border: none;
 	padding: 10px 20px;
@@ -12,12 +13,13 @@
 }
 
 .buttons:focus, .buttons:hover {
-    background-color: #2463D8 ;
+    background-color: rgb(35, 64, 117) ;
 	text-decoration: none;
 	color: #fff;
 	transition: all 0.3s ease;
 	outline: none;
 }
+
 
 nav {
 	background-color: #000 !important;
@@ -29,7 +31,7 @@ nav a {
 	font-weight: normal;
 }
 
-.signup-page,.signin-page {
+/* .signup-page,.signin-page {
   	box-shadow: 0 0 7px 0 #E9EDF5;
 	background-color: white;
 	border-radius: 10px;
@@ -58,7 +60,14 @@ nav a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
+} */
+
+/* .price {
+	font-size: 16px;
+	font-weight: bold;	
+} */
+
+/* My styles */
 
 .card {
 	border-color: transparent;
@@ -115,32 +124,8 @@ nav a {
 	font-weight: 400;
 }
 
-/* CART */
 
-.shopping-cart {
-	margin: 30px 0 50px 0;
-}
 
-ul .list{
-	background-color: pink !important;
-	padding-left: 0 !important;
-	list-style: none;
-	display: flex;
-	justify-content: space-between !important;
-	align-items: center;
-}
-
-ul li .qty b {
-	margin: 0 10px;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	padding: 5px;
-}
-
-ul .price {
-	font-size: 18px;
-	font-weight: bold;
-}
 
 .box {
 	display: flex;
@@ -158,4 +143,61 @@ ul .price {
 	align-items: center;
 	width: auto !important;
 	margin: 0 65px 0 0;
+}
+
+
+
+.order-card {
+	border-color: transparent;
+	transition: all 1s linear; 
+	border: 1px solid transparent;
+	box-shadow: 0 7px 16px 0 #e9e9e9;
+	margin-bottom: 2%;
+	padding: 20px 20px;
+}
+
+.list-item {
+	list-style: none !important;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.order-footer {
+	padding: 0 0 0 50px;
+	width: 30%;
+}
+
+
+
+
+
+.shopping-cart {
+	margin: 30px 0 50px 0;
+}
+
+ul {
+	padding-inline-start: 0 !important;
+	margin: 0 30px;
+}
+
+ul .list{
+	/* background-color: pink !important; */
+	/* padding: 0 30px !important; */
+	list-style: none;
+	display: flex;
+	justify-content: space-between !important;
+	align-items: center;
+}
+
+ul li .qty b {
+	margin: 0 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+ul .price {
+	font-size: 18px;
+	font-weight: bold;
 }
