@@ -26,14 +26,15 @@ router.get('/reduce/:id' , function(req, res, next) {
 	res.redirect('/shopping-cart');
 });
 
-// router.get('/increment/:id' , function(req, res, next) {
-// 	var productId = req.params.id;
-// 	var cart = new Cart(req.session.cart ? req.session.cart : {}); 
+router.get('/add/:id', function (req, res, next) {
+	var productId = req.params.id;
+	var cart = new Cart(req.session.cart ? req.session.cart : {}); // new cart will be created each tym we add a new item and will check if the cart property exists then we will pass the old cart otherwise will pass an empty javascript object
 
-// 	cart.reduceByOne(productId);
-// 	req.session.cart = cart;
-// 	res.redirect('/shopping-cart');
-// });
+	cart.incrementByOne(productId);
+	req.session.cart = cart;
+	res.redirect('/shopping-cart');
+});
+
 
 router.get('/remove/:id' , function(req, res, next) {
 	var productId = req.params.id;
