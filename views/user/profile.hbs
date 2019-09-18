@@ -10,13 +10,9 @@
 					{{# each this.items}}
 					<li class="list-item"> 
 						<img src="/{{ this.item.imagePath }}" class="img-responsive" style="width: 70px; height: 120px;">
-						{{!-- <span>{{ this.item.imagePath }} Pcs</span> --}}
-						<span style="font-weight: bold; text-transform:uppercase">{{ this.item.title }}</span>
+						<span style="font-weight: bold; text-transform:">{{ this.item.title }}</span>
 						<span>{{ this.qty }} Pcs</span>
 						<span>Rs {{ this.item.price }}/-</span>
-						{{!-- <strong>Total Price: Rs{{ this.cart.totalPrice }}</strong> --}}
-						{{!-- {{ this.item.title }} | {{ this.qty }}  --}}
-						{{!-- <span class="badge">{{ this.price }}</span> --}}
 					</li>
 					{{/each}}
 				</ul>

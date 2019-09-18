@@ -17,6 +17,7 @@
 				<label for="password">Password</label>
 				<input type="password" name="password" id="password" class="form-control">
 			</div>
+			<input type="hidden" name="_csrf" value="{{ csrfToken }}">
 			<button type="submit" class="buttons" style="margin-top: 10px;">SignUp</button>
 		</form>
 		<p>Already a Member? <a href="/user/signin" style="text-decoration: none;">Sign In Instead!</a></p>
