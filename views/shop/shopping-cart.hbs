@@ -9,8 +9,8 @@
 				{{!-- <img src="{{ this.item.imagePath }}" class="img-responsive" style="width: 70px; height: 120px;"> --}}
 				<strong style="text-transform: uppercase; width: 30%">{{ this.item.title }}</strong>
 				<span class="qty">
-					<i class="fa fa-plus fa-1x"></i>
-					{{!-- <a href="/add/{{ this.item._id}}"><i class="fa fa-plus fa-1x"></i></a> --}}
+					{{!-- <i class="fa fa-plus fa-1x"></i> --}}
+					<a href="/add/{{ this.item._id}}"><i class="fa fa-plus fa-1x"></i></a>
 					<b>{{this.qty}}</b>
 					<a href="/reduce/{{ this.item._id}}"><i class="fa fa-minus fa-1x"></i></a>
 				</span>
