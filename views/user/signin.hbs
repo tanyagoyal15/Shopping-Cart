@@ -1,25 +1,25 @@
 <div class="row">
-	<div class="col-md-4 col-md-offset-4 signin-page">
-		<h1><strong>Sign In</strong></h1>
+	<div class="col-md-4 col-md-offset-4">
+		<h1>Sign In</h1>
 		{{#if hasErrors}}
 		<div class="alert alert-danger">
 			{{# each messages}}
-				<p>{{ this }}</p>
+			<p>{{ this }}</p>
 			{{/each}}
 		</div>
 		{{/if}}
-		<form action="/user/signin" method="post" style="margin: 20px;">
-			<div class="form-group" style="display: flex; flex-direction: row; justify-content: center; align-items: center; border-bottom: 1px solid #ccc; font-size: 16px;">
-				<label for="email"><i class="fa fa-envelope" aria-hidden="true"></i></label>
-				<input type="text" name="email" id="email" class="form-control" placeholder="Your Email">
+		<form action="/user/signin" method="post">
+			<div class="form-group">
+				<label for="email">E-Mail</label>
+				<input type="text" autocomplete="off" name="email" id="email" class="form-control">
 			</div>
-			<div class="form-group" style="display: flex; flex-direction: row; justify-content: center; align-items: center; border-bottom: 1px solid #ccc; font-size: 16px;">
-				<label for="password"><i class="fa fa-lock" aria-hidden="true"></i></label>
-				<input type="password" name="password" id="password" class="form-control" placeholder="Your Password">
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input type="password" name="password" id="password" class="form-control">
 			</div>
 			<input type="hidden" name="_csrf" value="{{ csrfToken }}">
 			<button type="submit" class="buttons" style="margin-top: 10px;">SignIn</button>
 		</form>
-		<p>Don't have an account? <a href="/user/signup" style="text-decoration: none;">Sign Up Instead!</a></p>
+		<p>Don't have an account? <a href="/user/signup">Sign Up instead!</a></p>
 	</div>
 </div>
